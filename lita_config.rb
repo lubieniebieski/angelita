@@ -9,12 +9,12 @@ Lita.configure do |config|
 
   # Adapters
 
-  config.adapters.slack.token  = AppConfig['slack']['token']
+  config.adapters.slack.token  = AppConfig.slack.token
 
   # Handlers
 
-  config.handlers.trello.token = AppConfig['trello']['token']
-  config.handlers.trello.key = AppConfig['trello']['key']
-  config.handlers.trello.board_id = AppConfig['trello']['board_id']
-  config.handlers.github.organization_name = AppConfig['github']['organization_name']
+  config.handlers.trello.token = AppConfig.trello.token
+  config.handlers.trello.key = AppConfig.trello.access_key
+  config.handlers.trello.board_id = AppConfig.trello.board_id
+  config.handlers.github.organization_name = AppConfig.github.organization_name
 end

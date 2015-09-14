@@ -3,7 +3,7 @@ development:
     token: "token"
   trello:
     token: "token"
-    key: "key"
+    access_key: "key"
     board_id: "board_id"
   github:
     organization_name: "org_name"

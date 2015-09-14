@@ -1,21 +1,9 @@
 GIT
-  remote: git://github.com/croaky/ruby-trello.git
-  revision: c3654e3e67a88af0dd67fbed64846404f22c6c87
-  branch: upgrade-rest-client
-  specs:
-    ruby-trello (1.2.1)
-      activemodel (>= 3.2.0)
-      addressable (~> 2.3)
-      json
-      oauth (~> 0.4.5)
-      rest-client (~> 1.8.0)
-
-GIT
   remote: git://github.com/netguru/app_konfig.git
-  revision: ed7d1f0e63bb31e7cc3eb6769ee1912370dc320a
+  revision: f33f19977aea73f6777f9cd8cf6fb8c17e2dc77e
   specs:
-    app_konfig (0.0.2)
-      activesupport (>= 3.2)
+    app_konfig (0.1.0)
+      activesupport (>= 3.0)
 
 GEM
   remote: https://rubygems.org/
@@ -32,23 +20,19 @@ GEM
     addressable (2.3.8)
     builder (3.2.2)
     coderay (1.1.0)
-    domain_name (0.5.24)
-      unf (>= 0.0.5, < 1.0.0)
     eventmachine (1.0.8)
     faraday (0.9.1)
       multipart-post (>= 1.2, < 3)
     faye-websocket (0.10.0)
       eventmachine (>= 0.12.0)
       websocket-driver (>= 0.5.1)
-    http-cookie (1.0.2)
-      domain_name (~> 0.5)
     http_router (0.11.2)
       rack (>= 1.0.0)
       url_mount (~> 0.2.1)
     i18n (0.7.0)
     ice_nine (0.11.1)
     json (1.8.3)
-    lita (4.6.0)
+    lita (4.6.1)
       bundler (>= 1.3)
       faraday (>= 0.8.7)
       http_router (>= 0.11.2)
@@ -60,6 +44,10 @@ GEM
       rb-readline (>= 0.5.1)
       redis-namespace (>= 1.3.0)
       thor (>= 0.18.1)
+    lita-google-images (2.0.0)
+      lita (>= 4.0)
+    lita-karma (3.0.2)
+      lita (>= 4.0)
     lita-slack (1.6.0)
       eventmachine
       faraday
@@ -83,18 +71,20 @@ GEM
     redis (3.2.1)
     redis-namespace (1.5.2)
       redis (~> 3.0, >= 3.0.4)
-    rest-client (1.8.0)
-      http-cookie (>= 1.0.2, < 2.0)
+    rest-client (1.7.3)
       mime-types (>= 1.16, < 3.0)
       netrc (~> 0.7)
+    ruby-trello (1.2.1)
+      activemodel (>= 3.2.0)
+      addressable (~> 2.3)
+      json
+      oauth (~> 0.4.5)
+      rest-client (~> 1.7.2)
     slop (3.6.0)
     thor (0.19.1)
     thread_safe (0.3.5)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    unf (0.1.4)
-      unf_ext
-    unf_ext (0.0.7.1)
     url_mount (0.2.1)
       rack
     websocket-driver (0.6.2)
@@ -107,9 +97,11 @@ PLATFORMS
 DEPENDENCIES
   app_konfig!
   lita
+  lita-google-images
+  lita-karma
   lita-slack
   pry
-  ruby-trello!
+  ruby-trello
 
 BUNDLED WITH
    1.10.6
